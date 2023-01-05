@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#stopWatch-containter {
+    background-color: lightskyblue;
+    position: relative;
+    height: 20rem;
+    width: 60%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    border-radius: 10px;
+}
+
+.timer {
+    font-size: 4rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.play,
+.reset {
+    width: max-content;
+    height: max-content;
+    padding: 0.5rem 0.6rem;
+    border-radius: 10px;
+}
+
+.play {
+    background-color: green;
+}
+
+.reset {
+    background-color: red;
+}

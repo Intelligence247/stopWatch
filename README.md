@@ -9,7 +9,7 @@
 - Css
 - JavaScript
 ## Preview here
-[Go Live]()
+[Go Live](https://stellar-gingersnap-42765a.netlify.app)
 
 ![screenshot](./media/sketch.png)
 
@@ -19,5 +19,5 @@ If you want to contact me you can reach me at
 - https://github.com/Intelligence247 or
 - uthmanabdullahi2020@gmail.com
 ## Addtional Info
-- This is one of the series of project for the @Asabeneh 30-Days-Of-JavaScript
+- This is just a personal project
 - This is not meant for production. It's for learning purpose only

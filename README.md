@@ -12,8 +12,6 @@
 [Go Live](https://stellar-gingersnap-42765a.netlify.app)
 
 ![screenshot](./media/sketch.png)
-
-
 ## Contact
 If you want to contact me you can reach me at
 - https://github.com/Intelligence247 or

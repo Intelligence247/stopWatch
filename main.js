@@ -6,8 +6,10 @@ let minutesLeading = 0
 let hrsLeading = 0
 const displayTimer = document.querySelector('.timer')
 const play = document.querySelector('.play')
-
-
+const reset = document.querySelector('.reset')
+// Varriables for setintervals and timers
+let timerInterval = null;
+let timerStatus = 'stopped';
 const displayFunc = () => {
     seconds++
     if (seconds / 60 === 1) {
@@ -25,4 +27,25 @@ const displayFunc = () => {
 
     displayTimer.innerText = `${hrsLeading}:${minutesLeading}:${seconds}`
 }
-setInterval(displayFunc, 1000)
+// window.setInterval(displayFunc, 10)
+play.addEventListener('click', () => {
+    if (timerStatus == 'stopped') {
+        timerInterval = window.setInterval(displayFunc, 1000);
+        const playImg = document.querySelector('#playImg')
+        playImg.src = './media/pause.png'
+        timerStatus = 'started'
+    } else {
+        window.clearInterval(timerInterval);
+        const playImg = document.querySelector('#playImg')
+        playImg.src = './media/play-fill.png'
+        timerStatus = 'stopped'
+    }
+})
+reset.addEventListener('click', () => {
+
+    window.clearInterval(timerInterval)
+    minutes = 0
+    hrs = 0
+    seconds = 0
+    displayTimer.innerText = '00:00:00'
+})
